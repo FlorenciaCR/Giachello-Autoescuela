@@ -1,0 +1,172 @@
+  // Here you can add other styles
+  .title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    display: inline;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .giachelloTitle{
+      color: rgb(255,215,0);
+      font-family: giachelloFont;
+      font-size: 2rem;
+      -webkit-text-stroke: 1.5px black; /* width and color */
+      display: inline;
+  }
+  .slider {
+    display: flex;
+    /* Ajusta otros estilos del slider */
+  }
+
+  .slide {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alpha */
+  }
+
+  .slide-text {
+    position: absolute;
+    top: 30%; /* Ajusta la posición vertical del título */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Alinea en el centro vertical y horizontal */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: white !important;
+    text-align: center;
+    font-size: 3.5vw; /* Tamaño de fuente en relación con el ancho de la pantalla */
+    width: 100%;
+  }
+  
+  .slide-subtitle {
+    position: absolute;
+    top: 70%; /* Ajusta la posición vertical del subtítulo */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Alinea en el centro horizontal */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; /* Menor peso */
+    color: white !important;
+    text-align: center;
+    font-size: 3vw; /* Tamaño de fuente en relación con el ancho de la pantalla */
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 576px) {
+
+    .navbarLink{
+      font-size: 50px;
+    }
+    .title{
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      display: inline;
+      color: #edf2f4;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    .giachelloTitle{
+        color: #F5F749;
+        font-family: giachelloFont;
+        font-size: 1.2rem;
+        -webkit-text-stroke: 1.5px black; /* width and color */
+        display: inline;
+    }
+    .headerIconWrapper{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      display: block;
+      line-height: 1em; /* a */
+      max-height: 2em; /* a x number of line to show (ex : 2 line)  */
+    }
+    .slide-text {
+      position: absolute;
+      top: 30%; /* Ajusta la posición vertical del título */
+      left: 50%;
+      transform: translate(-50%, -50%); /* Alinea en el centro vertical y horizontal */
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: white !important;
+      text-align: center;
+      font-size: 4.5vw; /* Tamaño de fuente en relación con el ancho de la pantalla */
+      width: 100%;
+    }
+    
+    .slide-subtitle {
+      position: absolute;
+      top: 70%; /* Ajusta la posición vertical del subtítulo */
+      left: 50%;
+      transform: translate(-50%, -50%); /* Alinea en el centro horizontal */
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; /* Menor peso */
+      color: white !important;
+      text-align: center;
+      font-size: 3vw; /* Tamaño de fuente en relación con el ancho de la pantalla */
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .navbarLink{
+      font-size: 50px;
+    }
+    .title{
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      display: inline;
+      color: #ffffff;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    .giachelloTitle{
+        color: rgb(255,215,0);
+        font-family: giachelloFont;
+        font-size: 1rem;
+        -webkit-text-stroke: 1.5px black; /* width and color */
+        display: inline;
+    }
+    .headerIconWrapper{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      display: block;
+      line-height: 1em; /* a */
+      max-height: 2em; /* a x number of line to show (ex : 2 line)  */
+    }
+    .slide-text {
+      position: absolute;
+      top: 30%; /* Ajusta la posición vertical del título */
+      left: 50%;
+      transform: translate(-50%, -50%); /* Alinea en el centro vertical y horizontal */
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: white !important;
+      text-align: center;
+      font-size: 4.5vw; /* Tamaño de fuente en relación con el ancho de la pantalla */
+      width: 100%;
+    }
+    
+    .slide-subtitle {
+      position: absolute;
+      top: 70%; /* Ajusta la posición vertical del subtítulo */
+      left: 50%;
+      transform: translate(-50%, -50%); /* Alinea en el centro horizontal */
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; /* Menor peso */
+      color: white !important;
+      text-align: center;
+      font-size: 3vw; /* Tamaño de fuente en relación con el ancho de la pantalla */
+      width: 100%;
+    }
+  }

@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "coreui-free-angular-admin-template",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

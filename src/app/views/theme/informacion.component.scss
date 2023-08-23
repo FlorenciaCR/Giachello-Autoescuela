@@ -1,0 +1,63 @@
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap');
+
+  *{
+    font-family: 'Roboto', sans-serif;
+  }
+  .title{
+    font-family: 'Poppins', sans-serif;
+    font-size:32px;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .wrapCards{
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .card{
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    width: 250px;
+  }
+  .video{
+    width: 40vw;
+    height: 35vh;
+  }
+  .divVideos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media only screen and (max-width: 576px) {
+    .card{
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      margin-left: 0;
+    }
+      .video{
+      width: 90vw;
+      height: 40vh;
+    }
+    .divVideos{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  h3{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+  }
+  img{
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+  }

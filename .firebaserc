@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "autoescuelagiachello-5f53e"
+  },
+  "targets": {
+    "autoescuelagiachello-5f53e": {
+      "hosting": {
+        "coreui-free-angular-admin-template": [
+          "autoescuelagiachello-5f53e"
+        ]
+      }
+    }
+  }
+}

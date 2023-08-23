@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@600&family=Roboto&display=swap');
+@font-face {
+  font-family: giachelloFont;
+  src: url(../../../../scss/fonts/ARRUSK.ttf);
+}
+body{
+  background-color: rgb(235, 237, 239);
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  color: #333f48;
+}
+.divTitle{
+  text-align: center;
+  margin-bottom: 10px;
+  h1{
+    font-weight: bolder;
+    color: #2e3e68;
+  }
+}
+.expDivContainer{
+  display: flex; /* Establece el contenedor como flexbox */
+  align-items: center; /* Centra verticalmente los elementos */
+  height: 300px;
+  background-color: red;
+  height: 42vh;
+}
+.expHeader{
+  font-size: 4rem;
+  text-align: center;
+  color: white !important;
+}
+.expContent{
+  font-size: 2.5rem;
+  text-align: center;
+  color: white !important;
+
+}
+.expContainerIzq{
+  flex: 1; /* Ocupa el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.expContainerDer{
+  flex: 1; /* Ocupa el espacio disponible */
+  text-align: right; /* Alinea el texto a la derecha */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media only screen and (min-width: 576px) {
+  .stars{
+    width: calc(20rem - 3rem); /* 20rem de ancho menos el doble del padding vertical */
+    max-width: 100%;
+    height: auto;
+  }
+  .title{
+    font-family: 'Poppins', sans-serif;
+    font-size:48px;
+    text-align: center;
+    display: inline;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .giachelloTitle{
+    color: rgb(255,215,0);
+    font-family: giachelloFont;
+    font-size:48px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px black; /* width and color */
+    display: inline;
+  }
+  .cardImage{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #mapaCompu{
+    display: block;
+  }
+  #mapaCelu{
+    display: none;
+  }
+  .mapWrap{
+    width: 100%;
+    overflow: hidden;
+  }
+  #mapaDiv{
+    width: 49%;
+  }
+  #info{
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .stars{
+    width: calc(10rem - 3rem); /* 20rem de ancho menos el doble del padding vertical */
+    max-width: 100%;
+    height: auto;
+  }
+  #mapaCompu{
+    display: none;
+  }
+  #mapaCelu{
+    display: block;
+  }
+  .title{
+    font-family: 'Poppins', sans-serif;
+    font-size:48px;
+    text-align: center;
+    display: inline;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .giachelloTitle{
+    color: rgb(255,215,0);
+    font-family: giachelloFont;
+    font-size:48px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px black; /* width and color */
+    display: inline;
+  }
+  .cardImage{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mapWrap{
+    width: 100%;
+    overflow: hidden;
+  }
+  #mapaDiv{
+    width: 100%;
+  }
+  #info{
+    width: 100%;
+    margin: 10px;
+  }
+  .slide-text {
+    position: absolute;
+    top: 30%; /* Ajusta la posición vertical del título */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Alinea en el centro vertical y horizontal */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: white !important;
+    text-align: center;
+    font-size: 10vw; /* Tamaño de fuente en relación con el ancho de la pantalla */
+    width: 100%;
+  }
+  
+  .slide-subtitle {
+    position: absolute;
+    top: 70%; /* Ajusta la posición vertical del subtítulo */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Alinea en el centro horizontal */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; /* Menor peso */
+    color: white !important;
+    text-align: center;
+    font-size: 8vw; /* Tamaño de fuente en relación con el ancho de la pantalla */
+    width: 100%;
+  }
+  .expHeader{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .expContent{
+    font-size: 2rem;
+    text-align: center;
+  }
+}

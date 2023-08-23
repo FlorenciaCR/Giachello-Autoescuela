@@ -1,0 +1,30 @@
+
+<div class="card text-center d-flex justify-content-center ">
+    <h1 class="title">Probá tus conocimientos con un examen teórico</h1>
+
+    <div *ngIf="prevAnswered.length < 11">
+        <div class="mt-4">
+            <img src="{{ quizzes[currentQuiz].image }}" style="width: 10rem;" class=" text-center card-img-top" alt="">
+        </div>
+        
+        <p class="card-text">{{ prevAnswered.length }} de 10</p>
+        <div class="card-body">
+          <h5 class="card-title">{{ quizzes[currentQuiz].question }}</h5>
+          <div class="card text-center" >
+              <ul class="list-group list-group-flush text-center" *ngFor="let quiz of quizzes[currentQuiz].answer">
+                  <li class="list-group-item text-center">
+                      <input  type="radio" name="options" (change)="onAnswer(quiz.correct)" [disabled]="answerSelected">{{ quiz.option }}
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+        <div *ngIf="!(prevAnswered.length < 11)">
+            <button class="btn" (click)="mostrarRespuesta()" *ngIf="resultStatus === 'Mostar puntaje'">{{ resultStatus }}</button>
+            <button class="btn btn--new" (click)="playAgain()" *ngIf="resultStatus !== 'Mostar puntaje'">{{ resultStatus }}</button>
+            <div *ngIf="result">
+                Respuestas Correctas: {{ correctAnswers }} | Respuestas Incorrectas: {{ incorrectAnswers }}
+            </div>
+        </div>
+</div>
+

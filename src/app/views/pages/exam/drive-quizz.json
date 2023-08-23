@@ -1,0 +1,112 @@
+[
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b229.jpg",
+      "question": "Determine qué indica la señal que a continuación se presenta:",
+      "answer": [
+        { "option": "Inicio de doble mano.", "correct": false },
+        { "option": "Encrucijada (bifurcación).", "correct": true },
+        { "option": "Estrechamiento (en una sola mano).", "correct": false }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b263.jpg",
+      "question": "Determine qué indica la señal que a continuación se presenta:",
+      "answer": [
+        { "option": "Comienzo de autopista.", "correct": true },
+        { "option": "Comienzo de ruta.", "correct": false },
+        { "option": "Comienzo de semiautopista.", "correct": false }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b24.jpg",
+      "question": "Como conductor, observa que esta luz se encuentra intermitente, ¿qué debería esperar que haga el peatón?",
+      "answer": [
+        { "option": "Que no comience a cruzar la calzada.", "correct": false },
+        { "option": "Si inició el cruce, que lo finalice con mucha precaución.", "correct": false },
+        { "option": "Ambas respuestas, la A y la B son correctas.", "correct": true }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b76.jpg",
+      "question": "¿Qué indica esta demarcación amarilla en la calzada?",
+      "answer": [
+        { "option": "Que es un sector destinado a la detención y al estacionamiento de vehículos.", "correct": false },
+        { "option": "Que se debe circular lentamente por su sector central.", "correct": false },
+        { "option": "Que no se debe circular sobre ella.", "correct": true }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b274.jpg",
+      "question": "Indique qué significa esta señal:",
+      "answer": [
+        { "option": "Ruta Nacional N°5.", "correct": false },
+        { "option": "Ruta Provincial N°5.", "correct": true },
+        { "option": "Ruta Panamericana N°5.", "correct": false }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b253.jpg",
+      "question": "Esta señal vertical reglamentaria indica…",
+      "answer": [
+        { "option": "Que es un carril preferencial para ciclistas.", "correct": false },
+        { "option": "Que es un carril de uso exclusivo para ciclistas.", "correct": true },
+        { "option": "Que los ciclistas no pueden circular por este carril.", "correct": false }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b259.jpg",
+      "question": "Determine qué indica la señal que a continuación se presenta:",
+      "answer": [
+        { "option": "Prohibición de Girar a la Derecha.", "correct": false },
+        { "option": "Prohibición de Cambiar de Carril.", "correct": true },
+        { "option": "Prohibición de Adelantar.", "correct": false }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b256.jpg",
+      "question": "¿Qué indica esta señal reglamentaria?",
+      "answer": [
+        { "option": "Inicio de calle de convivencia.", "correct": false },
+        { "option": "Los peatones no deben circular por esa zona.", "correct": false },
+        { "option": "Los peatones deben circular obligatoriamente por la derecha.", "correct": true }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b272.jpg",
+      "question": "¿Qué indica esta señal?",
+      "answer": [
+        { "option": "Se encuentra permitido detenerse en esa vía.", "correct": false },
+        { "option": "Existencia de un estacionamiento vehicular, en las inmediaciones.", "correct": true },
+        { "option": "Se encuentra permitido estacionar en esa vía.", "correct": false }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b235.jpg",
+      "question": "Determine qué indica la señal que a continuación se presenta:",
+      "answer": [
+        { "option": "Niños jugando.", "correct": false },
+        { "option": "Zona escolar.", "correct": true },
+        { "option": "Calle peatonal.", "correct": false }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b122.jpg",
+      "question": "Frente a la demarcación central de la calzada señalada, ¿cuál es la conducta a seguir?",
+      "answer": [
+        { "option": "Se debe respetar lo que rige con respecto a la línea más próxima; si es continua no traspasarla y si es discontinua está permitido hacerlo.", "correct": true },
+        { "option": "Se debe respetar lo que rige con respecto a la línea más próxima; si es discontinua no traspasarla y si es continua está permitido hacerlo.", "correct": false },
+        { "option": "No debe traspasarse ninguna de ellas.", "correct": false }
+      ]
+    },
+    {
+      "image": "https://www.testdeconducir.com.ar/images/preguntas/b258.jpg",
+      "question": "¿Qué indica esta señal reglamentaria?",
+      "answer": [
+        { "option": "Que no se puede circular a una velocidad inferior a 35 km/h en esa vía.", "correct": true },
+        { "option": "Que la velocidad máxima es de 35 km/h en esa vía.", "correct": false },
+        { "option": "Que la velocidad precautoria es de 35 km/h en esa vía.", "correct": false }
+      ]
+    }
+
+]
+  

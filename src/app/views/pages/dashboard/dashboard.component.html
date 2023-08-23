@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div>
+    <c-carousel (itemChange)="onSlideChange($event)" [interval]="6000" transition="slide" class="slider">
+      <c-carousel-inner>
+        <c-carousel-item *ngFor="let slide of slides">
+          <div class="slide">
+            <img
+              [src]="slide.src"
+              alt="{{slide.title}}"
+              class="w-100"
+              style="height: 480px;"
+              loading="lazy"
+            />
+          </div>
+          <h1 class="slide-text">{{slide.title}}</h1>
+          <h2 class="slide-subtitle">{{slide.subtitle}}</h2>
+        </c-carousel-item>
+      </c-carousel-inner>
+    </c-carousel>
+    <div>
+      <div class="expDivContainer pt-4 pb-4">
+        <div class="expContainerIzq">
+          <h3 class="expHeader">
+            +10
+          </h3>
+          <h4 class="expContent">
+            Años junto a vos
+          </h4>
+        </div>
+        <img cCardImg="top" class="stars" src="../../../assets/images/5_stars.png">
+        <div class="expContainerDer">
+          <h3 class="expHeader">
+            +100
+          </h3>
+          <h4 class="expContent">
+            Reseñas en google maps
+          </h4>
+        </div>
+      </div>
+      <div>
+        
+      </div>
+    </div>
+    
+    <c-row style="margin-left:10px; margin-right:10px; margin-top: 30px;">
+      <c-col [sm]="3" class="mb-4" class="mb-4">
+        <c-card class="h-100">
+          <c-card-body>
+            <blockquote class="blockquote mb-0">
+              <p>
+                Gus, sos un genio, me explicaste super bien y tenes mucha paciencia, algo muy importante!!
+              </p>
+              <footer class="blockquote-footer">
+               Ezequiel Savva
+                <cite title="Source Title">Google Maps</cite>
+              </footer>
+            </blockquote>
+          </c-card-body>
+        </c-card>
+      </c-col>
+      <c-col [sm]="3" class="mb-4">
+        <c-card class="h-100">
+          <c-card-body>
+            <blockquote class="blockquote mb-0">
+              <p>
+              Excelente instructor Gustavo!!! te explica muy bien y con mucha paciencia, aprendes un montón. Lo súper recomiendo."
+              </p>
+              <footer class="blockquote-footer">
+                Jennifer Espinola
+                <cite title="Source Title">Google Maps</cite>
+              </footer>
+            </blockquote>
+          </c-card-body>
+        </c-card>
+      </c-col>
+      <c-col [sm]="3" class="mb-4">
+        <c-card class="h-100">
+          <c-card-body>
+            <blockquote class="blockquote mb-0">
+              <p>
+                Gus es un excelente instructor, explica super bien y con toda la paciencia! La verdad me encanto aprender con él y lo recomiendo
+              </p>
+              <footer class="blockquote-footer">
+                Daiana Sibar
+                <cite title="Source Title">Google Maps</cite>
+              </footer>
+            </blockquote>
+          </c-card-body>
+        </c-card>
+      </c-col>
+      <c-col [sm]="3" class="mb-4">
+        <c-card class="h-100">
+          <c-card-body>
+            <blockquote class="blockquote mb-0">
+              <p>
+              Muy buen profe.... y muy didactico y paciente para enseñar.
+              </p>
+              <footer class="blockquote-footer">
+                Matias Menu
+                <cite title="Source Title">Google Maps</cite>
+              </footer>
+              <a href="https://goo.gl/maps/xSmEtiS8y4ypsX6VA" target="_blank" rel="noopener noreferrer"><button cButton color="danger" >Ver mas</button></a>
+            </blockquote>
+          </c-card-body>
+        </c-card>
+      </c-col>
+
+    </c-row>
+    <div class="divTitle mt-4">
+      <h3 style="font-size: 40px; font-weight: bold;">
+        Nuestros Servicios
+      </h3>
+      <h4>
+        ¿Querés sacar tu primera licencia de conducir?
+      </h4>
+      <h4>
+        Cursos a domicilio, todos los días de 8:00 a 20:00. De una hora de duración
+      </h4>
+    </div>
+    <div class="px-3">
+      <c-row [gutter]="4" class="mb-3" [md]="3" [xs]="1">
+        <c-col>
+          <a href="/#/informacion" style="text-decoration: none;">
+            <c-card class="h-100">
+              <img cCardImg="top" class="cardImage" src="../../../assets/images/information.png">
+              <c-card-body>
+                <h5 cCardTitle>Material teórico</h5>
+                <p cCardText>
+                  Te brindamos el material teórico completo sobre normas viales, señales y decisiones seguras al conducir.
+                </p>
+              </c-card-body>
+            </c-card>
+          </a>
+        </c-col>
+        <c-col>
+          <c-card class="h-100">
+            <img cCardImg="top" class="cardImage" src="../../../assets/images/neighborhood.png">
+            <c-card-body>
+              <h5 cCardTitle>Practica en calle</h5>
+              <p cCardText>
+                En nuestras lecciones prácticas en la calle, te guiamos a través de situaciones reales de manejo para desenvolverte con confianza en las calles. 
+              </p>
+            </c-card-body>
+          </c-card>
+        </c-col>
+        <c-col>
+          <c-card class="h-100">
+            <img cCardImg="top" class="cardImage" src="../../../assets/images/test.png">
+            <c-card-body>
+              <h5 cCardTitle>Acompañamiento a Examen</h5>
+              <p cCardText>
+                Incluye la posibilidad de utilizar nuestro vehículo para rendir el examen práctico.
+              </p>
+            </c-card-body>
+          </c-card>
+        </c-col>
+        <c-col>
+          <c-card class="h-100">
+            <img cCardImg="top" class="cardImage" src="../../../assets/images/highway-sign.png">
+            <c-card-body>
+              <h5 cCardTitle>Clases de Autopista</h5>
+              <p cCardText>
+                Te permiten dominar las técnicas necesarias para conducir de manera segura y efectiva en autopistas y vías rápidas.
+                Aprenderás a manejar cambios de carril, entrar y salir de rampas y mantener una velocidad constante.
+              </p>
+            </c-card-body>
+          </c-card>
+        </c-col>
+        <c-col>
+          <c-card class="h-100">
+            <img cCardImg="top" class="cardImage" src="../../../assets/images/pollution.png">
+            <c-card-body>
+              <h5 cCardTitle>Manejo Avanzado</h5>
+              <p cCardText>
+                Perfecciona tus habilidades en situaciones desafiantes, desde estacionamiento preciso hasta maniobras complejas, preparándote para un manejo seguro y confiado en cualquier entorno.
+              </p>
+            </c-card-body>
+          </c-card>
+        </c-col>
+        <c-col>
+          <c-card class="h-100">
+            <img cCardImg="top" class="cardImage" src="../../../assets/images/driving-test.png">
+            <c-card-body>
+              <h5 cCardTitle>Manejo Defensivo</h5>
+              <p cCardText>
+                Te equipa con técnicas esenciales para anticipar y evitar peligros en el día a día. Para que conduzcas con precaución y confianza en cualquier situación.
+              </p>
+            </c-card-body>
+          </c-card>
+        </c-col>
+      </c-row>
+    </div>
+    
+  </div>
+  
+  <!-- <c-card class="mb-1">
+    <c-card-body breakpoint="md">
+      <div class="divTitle">
+        <h3 class="card-title mb-0">Nuestros Autos</h3>
+      </div>
+      <c-carousel >
+        <c-carousel-indicators></c-carousel-indicators>
+        <c-carousel-inner>
+          <c-carousel-item *ngFor="let slide of slides">
+            <img
+              [src]="slide.src"
+              alt="{{ slide.title }}"
+              class="d-block w-100"
+              style="height: 480px;"
+              loading="lazy" 
+              />
+          </c-carousel-item>
+        </c-carousel-inner>
+        <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+        <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+      </c-carousel>
+    </c-card-body>
+  </c-card> -->
+  <app-whats-app-floating></app-whats-app-floating>
+</body>
+</html>

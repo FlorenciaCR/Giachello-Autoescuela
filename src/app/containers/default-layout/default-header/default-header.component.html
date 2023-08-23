@@ -1,0 +1,41 @@
+<c-navbar expand="md" placement="fixed-top">
+  <c-container fluid>
+    <a cNavbarBrand style="max-width: 70%;" class="headerIconWrapper">
+        <a href="/#/inicio" style="text-decoration: none;">
+          <p class="card-title mb-0" class="title">Autoescuela </p>
+          <p class="giachelloTitle">Giachello</p> 
+        </a>
+    </a>
+    <button [cNavbarToggler] cOffcanvasToggle="OffcanvasSidebarDark"></button>
+    <c-offcanvas
+      placement="start"
+      id="OffcanvasSidebarDark"
+      tabindex="-1"
+      [backdrop]="false"
+      [scroll]="true"
+    >
+      <c-offcanvas-header>
+        <button
+          cButtonClose
+          class="text-reset"
+          cOffcanvasToggle="OffcanvasSidebarDark"
+          aria-label="Close"
+          black
+        ></button>
+      </c-offcanvas-header>
+      <c-offcanvas-body>
+        <c-navbar-nav class="justify-content-end flex-grow-1 pe-3">
+          <c-nav-item>
+            <a cNavLink class="navbarLink" cOffcanvasToggle="OffcanvasSidebarDark" routerLink="inicio" [routerLinkActive]="['active']">Inicio 🚗</a>
+          </c-nav-item>
+          <c-nav-item>
+            <a cNavLink class="navbarLink" cOffcanvasToggle="OffcanvasSidebarDark" routerLink="informacion">Información</a>
+          </c-nav-item>
+          <!-- <c-nav-item>
+            <a cNavLink cOffcanvasToggle="OffcanvasSidebarDark" routerLink="sobreNosotros">Sobre Nosotros</a>
+          </c-nav-item> -->
+        </c-navbar-nav>
+      </c-offcanvas-body>
+    </c-offcanvas>
+  </c-container>
+</c-navbar>
